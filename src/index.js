@@ -1,7 +1,4 @@
 import './style.css';
-// import {addList} from './addRemove';
-
-// const { addList, removeList } = require('./addRemove');
 
 const todoList = document.getElementById('todoList');
 const addListForm = document.querySelector('#form1');
@@ -10,7 +7,7 @@ const textInput = document.getElementById('textInput');
 let todos = JSON.parse(localStorage.getItem('todos'));
 
 // display task function
-export const displayTask = () => {
+const displayTask = () => {
   let li = '';
   if (todos) {
     todos.forEach((todo) => {
@@ -50,7 +47,6 @@ const addList = (e) => {
   displayTask();
 };
 addListForm.addEventListener('submit', addList);
-
 
 // remove task
 const removeList = (index) => {
@@ -111,5 +107,4 @@ clearListBtn.addEventListener('click', () => {
   localStorage.setItem('todos', JSON.stringify(todos));
   displayTask();
 });
-
 todoList.addEventListener('click', clearList);
