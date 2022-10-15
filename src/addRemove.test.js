@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 const { addList, removeList } = require('./addRemove.js');
 
 describe('addList function testing', () => {

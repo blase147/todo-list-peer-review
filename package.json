@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/blase147/todo-list-peer-review#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.18.6",
     "@babel/preset-env": "^7.19.4",
     "@types/jest": "^29.1.2",
     "babel-eslint": "^10.1.0",

@@ -1,4 +1,5 @@
 import './style.css';
+import { addList } from './addRemove';
 
 const todoList = document.getElementById('todoList');
 const addListForm = document.querySelector('#form1');
@@ -7,7 +8,7 @@ const textInput = document.getElementById('textInput');
 let todos = JSON.parse(localStorage.getItem('todos'));
 
 // display task function
-const displayTask = () => {
+export const displayTask = () => {
   let li = '';
   if (todos) {
     todos.forEach((todo) => {
@@ -28,24 +29,24 @@ const displayTask = () => {
 };
 displayTask();
 
-// add task
-const addList = (e) => {
-  e.preventDefault();
-  const userInput = textInput.value.trim();
-  textInput.value = '';
-  if (!userInput) return;
-  if (!todos) {
-    todos = [];
-  }
-  const list = {
-    description: userInput,
-    completed: false,
-    index: todos.length + 1,
-  };
-  todos.push(list);
-  localStorage.setItem('todos', JSON.stringify(todos));
-  displayTask();
-};
+// // add task
+// const addList = (e) => {
+//   e.preventDefault();
+//   const userInput = textInput.value.trim();
+//   textInput.value = '';
+//   if (!userInput) return;
+//   if (!todos) {
+//     todos = [];
+//   }
+//   const list = {
+//     description: userInput,
+//     completed: false,
+//     index: todos.length + 1,
+//   };
+//   todos.push(list);
+//   localStorage.setItem('todos', JSON.stringify(todos));
+//   displayTask();
+// };
 addListForm.addEventListener('submit', addList);
 
 // remove task
