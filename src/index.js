@@ -1,4 +1,8 @@
 import './style.css';
+// import {addList} from './addRemove';
+
+// const { addList, removeList } = require('./addRemove');
+
 const todoList = document.getElementById('todoList');
 const addListForm = document.querySelector('#form1');
 const textInput = document.getElementById('textInput');
@@ -27,7 +31,7 @@ export const displayTask = () => {
 };
 displayTask();
 
-add task
+// add task
 const addList = (e) => {
   e.preventDefault();
   const userInput = textInput.value.trim();
