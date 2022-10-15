@@ -1,5 +1,4 @@
 import './style.css';
-
 const todoList = document.getElementById('todoList');
 const addListForm = document.querySelector('#form1');
 const textInput = document.getElementById('textInput');
@@ -7,7 +6,7 @@ const textInput = document.getElementById('textInput');
 let todos = JSON.parse(localStorage.getItem('todos'));
 
 // display task function
-const displayTask = () => {
+export const displayTask = () => {
   let li = '';
   if (todos) {
     todos.forEach((todo) => {
@@ -28,7 +27,7 @@ const displayTask = () => {
 };
 displayTask();
 
-// add task
+add task
 const addList = (e) => {
   e.preventDefault();
   const userInput = textInput.value.trim();
@@ -47,6 +46,7 @@ const addList = (e) => {
   displayTask();
 };
 addListForm.addEventListener('submit', addList);
+
 
 // remove task
 const removeList = (index) => {
@@ -107,4 +107,5 @@ clearListBtn.addEventListener('click', () => {
   localStorage.setItem('todos', JSON.stringify(todos));
   displayTask();
 });
+
 todoList.addEventListener('click', clearList);
