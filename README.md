@@ -44,7 +44,7 @@ $ git pull origin todo-list-peer-review
 
 - Contributions, issues, and feature requests are welcome!
 
-  Feel free to check the issues page.https://github.com/blase147/awesome-books/issues
+  Feel free to check the issues page.https://github.com/blase147/todo-list-peer-review/issues
 
 ## Show your support
 
