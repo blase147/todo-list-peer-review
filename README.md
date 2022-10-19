@@ -36,6 +36,11 @@ $ git pull origin todo-list-peer-review
 - LinkedIn: [@ChukwumaMosanya](https://www.linkedin.com/in/chukwuma-mosanya-34645388)
 
 
+👤 **Nickson Nowembabazi**
+- GitHub: [@blase147](https://github.com/blase147)
+- Twitter: [@ChukwumaMosanya](https://twitter.com/ChukwumaMosanya)
+- LinkedIn: [@ChukwumaMosanya](https://www.linkedin.com/in/chukwuma-mosanya-34645388)
+
 # 🤝 Contributing
 
 - Contributions, issues, and feature requests are welcome!
