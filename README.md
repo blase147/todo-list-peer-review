@@ -1,6 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-All changes were successful as linters errors were all fixed. 
 
 ## TODO LIST PROJECT
 Here is a [link] (https://blase147.github.io/todo-list-peer-review/dist/index.html) to the live page.
@@ -23,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 
 $ git clone https://github.com/blase147/todo-list-peer-review.git
 
-$ git checkout -b test2-project
+$ git checkout -b test2
 
 $ git pull origin todo-list-peer-review
 
