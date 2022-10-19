@@ -3,36 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Wbpack Exercise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>TODO-list-App</title>
 </head>
 <body>
-    <div id="todoContainer">
-        <div class="headerContainer">
-            <h1 class="header">Today's To Do</h1>
-            <div class="btnContainer">
-                <button class="refreshBtn">
-                    <i class="fa fa-refresh"></i>    
-                </button>
-            </div>
-        </div>
-
-        <div class="addList">
-            <form id="form1" class="addList"  action="">
-                <input id="textInput" type="text" placeholder="Add to your list..." required>
-                <button  type="submit" class="addListBtn">
-                    <i class="fa fa-plus"></i>
-                </button>
-            </form>
-        </div>
-        <div id="todoList">
-
-        </div>
-        
-        <div class="clearListBtnContainer">
-            <button class="clearListBtn" type="button">Clear all completed</button>
-        </div>
-    </div>
+    <main>
+        <article>
+            <header>
+                <h1>Today's TODO List</h1>
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+            </header>
+            <section>
+                <div class="new-task-field">
+                    <input type="text" placeholder="Add to your List">
+                </div>
+                <ul class="tasks">
+                </ul>
+                <button class="clearAll">Clear all completed tasks</button>
+            </section> 
+        </article>
+    </main>
 </body>
 </html>
