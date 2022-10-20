@@ -6,8 +6,8 @@ const { updateStatus, editDescription } = require('./interactivity.js');
 
 describe('updateStatus function testing', () => {
   document.body.innerHTML = `<input type="checkbox" name="">
-                           <input class="task task1" type="text" placeholder="task1">
-                           <input class="task task1 strike" type="text" placeholder="task1">`;
+                            <input class="task task1" type="text" placeholder="task1">
+                            <input class="task task1 strike" type="text" placeholder="task1">`;
   const check = document.querySelector('[type="checkbox"]');
   const input = document.querySelector('.task.task1');
   const inputResult = document.querySelector('.task.task1.strike');
